@@ -1,4 +1,4 @@
-export default function PageLoader({ leaving = false }) {
+export default function PageLoader({ leaving = false, label = "Opening the page" }) {
 	return (
 		<div
 			className={`page-loader${leaving ? " is-leaving" : ""}`}
@@ -21,7 +21,7 @@ export default function PageLoader({ leaving = false }) {
 			<div className="page-loader-card">
 				<img src="/logo-nm.png?v=2" alt="" />
 				<p>Nafis Mufadhal</p>
-				<span>Opening the page</span>
+				<span>{label}</span>
 				<i />
 			</div>
 		</div>

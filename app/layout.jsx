@@ -10,6 +10,7 @@ import ClientTopProgressBar from "@/components/ClientTopProgressBar";
 import AmbientBackground from "@/components/AmbientBackground";
 import FlyingRocket from "@/components/FlyingRocket";
 import LinkOpenAnimation from "@/components/LinkOpenAnimation";
+import SplashScreen from "@/components/SplashScreen";
 
 
 
@@ -123,6 +124,7 @@ export default function RootLayout({ children }) {
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
 				/>
 				<ClientTopProgressBar />
+				<SplashScreen />
 				<LinkOpenAnimation />
 				<Navbar />
 				{children}
